@@ -11,5 +11,112 @@
     <!-- add table here -->
 
         
+< <title>Covid-19 Statistics</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        table {
+            width: 80%;
+            margin: 0 auto;
+            border-collapse: collapse; /* Collapse borders for a clean look */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow to the table */
+            border-radius: 8px; /* Rounded corners */
+        }
+        th, td {
+            padding: 12px 15px;
+            text-align: center;
+            border: 1px solid #ddd; /* Light border for individual cells */
+        }
+        th {
+            background-color: #4CAF50; /* Green background for headers */
+            color: white;
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2; /* Alternating row colors */
+        }
+        tr:hover {
+            background-color: #ddd; /* Highlight row on hover */
+        }
+        tbody {
+            background-color: white; /* White background for the body of the table */
+        }
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 8px 8px 0 0; /* Rounded top corners */
+            margin-bottom: 15px;
+        }
+        td {
+            font-size: 1em;
+            color: #333;
+        }
+        .high {
+            background-color: #ffcccb; /* Red color for high values */
+        }
+        .low {
+            background-color: #d1ffd6; /* Light green color for low values */
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <caption>Covid-19 Statistics by Country</caption>
+        <thead>
+            <tr>
+                <th>Country</th>
+                <th>Cases</th>
+                <th>Deaths</th>
+                <th>Recovered</th>
+                <th>Active Cases</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>USA</td>
+                <td class="high">35,000,000</td>
+                <td class="high">600,000</td>
+                <td>30,000,000</td>
+                <td>4,400,000</td>
+            </tr>
+            <tr>
+                <td>India</td>
+                <td class="high">34,000,000</td>
+                <td class="high">450,000</td>
+                <td>33,000,000</td>
+                <td>500,000</td>
+            </tr>
+            <tr>
+                <td>Brazil</td>
+                <td class="high">22,000,000</td>
+                <td class="high">615,000</td>
+                <td>20,000,000</td>
+                <td>600,000</td>
+            </tr>
+            <tr>
+                <td>Australia</td>
+                <td class="low">2,000,000</td>
+                <td class="low">3,500</td>
+                <td>1,950,000</td>
+                <td>46,500</td>
+            </tr>
+            <tr>
+                <td>Germany</td>
+                <td class="low">7,000,000</td>
+                <td class="low">100,000</td>
+                <td>6,500,000</td>
+                <td>400,000</td>
+            </tr>
+        </tbody>
+    </table>
+
 </body>
 </html>
